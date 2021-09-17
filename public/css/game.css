@@ -1,0 +1,283 @@
+body {
+    font-family: "AgencyFB";
+    font-smooth: always;
+}
+
+.bg {
+    position: fixed;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    mix-blend-mode: overlay;
+}
+
+.game-card-table tr {
+    height: 12.8vh
+}
+
+.game-card-table td {
+    border-top: 0px;
+    background-image: url('../img/card/front/gray.png');
+    background-repeat: no-repeat;
+    background-size: 96%;
+    width: 20%;
+    max-width: 20%;
+    padding: 1px;
+    background-position: center;
+    perspective: 600px;
+}
+
+.game-card-text {
+    position: absolute;
+    top: 56.5%;
+    z-index: 1;
+    margin-left: 34px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.game-card-back {
+    background-repeat: no-repeat;
+    background-size: 94%;
+    position: absolute;
+    z-index: 2;
+    left: 3%;
+    margin-top: 3.5%;
+    transition: all 400ms ease 0s;
+    width: 100%;
+    padding-bottom: 1px;
+}
+
+.game-card-back-open {
+    transition: all 400ms ease 0s;
+    transform: rotateX(55deg) translateZ(42px);
+}
+
+.game-card-back .game-card-agent {
+    max-width: 66%;
+    transform: translateX(38px);
+    margin-top: 2px;
+}
+
+
+/* Red Side*/
+
+.red-side {
+    max-width: 325px;
+    margin-right: 20px;
+    float: right;
+    padding: 10px;
+    background-color: #830000;
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    border-bottom: 4px solid rgb(0, 0, 0, 0.38);
+}
+
+.red-side .side-card {
+    max-width: 300px;
+}
+
+.red-side .side-card .side-card-bg {
+    width: 200px;
+}
+
+.red-side .side-card .side-agent {
+    position: absolute;
+    width: 144px;
+    margin-left: -175px;
+}
+
+.red-side .found-count {
+    display: inline-block;
+    font-size: 58px;
+    color: white;
+    float: right;
+    margin-top: -110px;
+    margin-right: 20px;
+}
+
+.red-side .side-agent-head {
+    font-family: "BlenderPro";
+    font-weight: 900;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 20px;
+    color: white;
+    margin-top: 1px;
+}
+
+hr {
+    width: 280px;
+    margin-top: -5px;
+}
+
+.red-side .player-list {
+    margin: 0;
+    padding: 0;
+    margin-top: -10px;
+    color: white;
+    list-style-type: none;
+    overflow: hidden;
+    min-height: 70px;
+}
+
+.red-side .player-list li {
+    font-family: "BlenderPro";
+    float: left;
+    margin-left: 10px;
+}
+
+.side-mini-head {
+    margin-top: 15px;
+    width: 100%;
+    display: inline-block;
+}
+
+.side-btn:focus,
+.side-btn:hover,
+.side-btn:visited,
+.side-btn:link,
+.side-btn:active,
+.side-btn {
+    text-decoration: none;
+    outline: none;
+}
+
+.side-btn {
+    margin-top: 10px;
+    width: 250px;
+    font-family: "BlenderPro";
+    font-weight: 700;
+    font-size: 22px;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 1px solid #d0ff00;
+    border-bottom: 5px solid rgb(0, 0, 0, 0.38);
+    padding: 0px;
+    background-color: #d0ff00;
+    color: #000000;
+}
+
+.side-btn:focus,
+.side-btn:hover {
+    border-bottom: 3px solid rgb(0, 0, 0, 0.38);
+    padding: 1px;
+}
+
+.side-btn:active {
+    border-bottom: 3px solid rgb(0, 0, 0, 0.20);
+    color: rgb(79, 79, 79);
+}
+
+.blue-side {
+    float: left;
+    margin-right: 0;
+    margin-left: 20px;
+    background-color: #0085cc;
+    ;
+}
+
+.blue-side .side-card {
+    float: right;
+}
+
+.blue-side .found-count {
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.game-players-btn {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 322px;
+}
+
+.game-players-btn-2 {
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 322px;
+}
+
+.annonce-area {
+    margin-top: 10px;
+}
+
+.annonce-area section {
+    font-family: "BlenderPro", "sans-serif";
+    font-weight: 900;
+    font-size: 24px;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    background-color: #ffffff;
+    padding: 2px 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.head-area {
+    padding-top: 3%;
+}
+
+.player-dropdown {
+    width: 320px;
+    border-radius: .60rem;
+}
+
+.player-dropdown .dropdown-menu {
+    padding: 10px;
+    font-family: "BlenderPro";
+}
+.player-dropdown .dropdown-menu h6{ 
+    font-weight: 700;
+}
+
+.player-dropdown ul {
+    margin: 0;
+    padding: 0px 10px 0px 0px;
+    margin-top: -10px;
+    list-style-type: none;
+    overflow: hidden;
+    min-height: 70px;
+}
+
+.player-dropdown ul li {
+    margin-left: 10px;
+    float: left;
+}
+
+.playerNameModal {
+    font-family: "BlenderPro", "sans-serif";
+}
+
+.playerNameModal .modal-content {
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px 12px 12px 12px;
+    -moz-border-radius: 12px 12px 12px 12px;
+    -webkit-border-radius: 12px 12px 12px 12px;
+}
+
+.playerNameModal .modal-content label {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.playerNameModal #playerNameModalInput {
+    padding: 4px 20px;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    outline: none;
+    text-decoration: none;
+    border: 2px solid #d4d4d4;
+}
+
+.playerNameModal .side-btn {
+    width: 100%;
+}

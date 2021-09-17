@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- bootstrap -->
+
+    <link rel="stylesheet" href="/font/AgencyFB.css">
+    <link rel="stylesheet" href="/font/BlenderPro.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+
+    <link rel="stylesheet" href="/css/game.css">
+</head>
+
+<body style="background: radial-gradient(circle at 50% 50%, rgb(231, 102, 60) 0%, rgb(72, 12, 2) 100%);">
+    <img src="/img/bg-raster.svg" class="bg" />
+    <div class="container-fluid head-area">
+        <div class="row">
+
+
+            <div class="col-md-3">
+
+                <div class="head-side-1">
+
+                    <button id="playersHomeButton" type="button" class="side-btn game-players-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <%= sessUsername %>  &nbsp;<i class="fas fa-user-friends"></i>
+                    </button>
+
+                    <div class="dropdown player-dropdown">
+                        <div class="dropdown-menu" aria-labelledby="playersHomeButton">
+                            <h6>İZLEYİCİLER</h6>
+                            <hr>
+                            <ul class="game-spectators">
+                            </ul>
+
+                            <button id="joinSpectatorsButton" type="button" class="side-btn">İzleyicilere Katıl  &nbsp;<i class="fas fa-sign-in-alt"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="annonce-area">
+                    <section>Duyuru Kısmı &nbsp;&nbsp;<i class="fas fa-bullhorn"></i></section>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="head-side-2">
+                    <button type="button" class="side-btn game-players-btn-2">LOBİ  &nbsp;<i class="fas fa-person-booth"></i></button>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+
+
+
+            <div class="col-md-3">
+                <div class="red-side">
+                    <div class="row">
+                        <div class="col-12">
+
+                            <div class="side-card">
+                                <img class="side-card-bg" src="/img/card/back/red.png">
+                                <img class="side-agent" src="/img/agent/red/<%= redSideAgent %>.png">
+                            </div>
+
+                            <section class="found-count">8</section>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+
+
+
+                            <div class="side-mini-head">
+                                <h6 class="side-agent-head" style="display:inline-block;">Ajanlar</h6>
+                            </div>
+                            <hr>
+                            <ul id="redAgentList" class="player-list">
+                            </ul>
+                            <button id="joinRedAgentsButton" type="button" class="side-btn">Ajanlara Katıl  &nbsp;<i class="fas fa-sign-in-alt"></i></button>
+
+
+
+                            <div class="side-mini-head">
+                                <h6 class="side-agent-head" style="display:inline-block;">Kumandanlar</h6>
+                            </div>
+                            <hr>
+                            <ul id="redCommandList" class="player-list">
+                            </ul>
+                            <button id="joinRedCommandsButton" type="button" class="side-btn">Kumandanlara Katıl  &nbsp;<i class="fas fa-sign-in-alt"></i></button>
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="col-md-6">
+
+                <table class="table game-card-table">
+                    <tbody>
+
+
+                        <% cards = JSON.parse(cards);
+                            let i = 0;
+                            cards.forEach( card => { ++i 
+                    if ( i % 5 === 1) {%>
+                            <tr>
+                                <% } %>
+                                    <td id="gameCard<%= i %>">
+                                        <section class="game-card-text">
+                                            <%= card %>
+                                        </section>
+                                    </td>
+                                    <% if ( i % 5 === 0) {%>
+                            </tr>
+                            <% } %>
+                                <% }) %>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-3">
+                <div class="red-side blue-side">
+                    <div class="row">
+                        <div class="col-12">
+
+                            <section class="found-count">8</section>
+                            <div class="side-card">
+                                <img class="side-card-bg" src="/img/card/back/blue.png">
+                                <img class="side-agent" src="/img/agent/blue/<%= blueSideAgent %>.png">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+
+
+
+                            <div class="side-mini-head">
+                                <h6 class="side-agent-head" style="display:inline-block;">Ajanlar</h6>
+                            </div>
+                            <hr>
+                            <ul id="blueAgentList" class="player-list">
+                            </ul>
+                            <button id="joinBlueAgentsButton" type="button" class="side-btn">Ajanlara Katıl  &nbsp;<i class="fas fa-sign-in-alt"></i></button>
+
+
+
+                            <div class="side-mini-head">
+                                <h6 class="side-agent-head" style="display:inline-block;">Kumandanlar</h6>
+                            </div>
+                            <hr>
+                            <ul id="blueCommandList" class="player-list">
+                            </ul>
+                            <button id="joinBlueCommandsButton" type="button" class="side-btn">Kumandanlara Katıl  &nbsp;<i class="fas fa-sign-in-alt"></i></button>
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-lg playerNameModal" tabindex="-1" 
+        role="dialog" id="usernameModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <label for="playerNameModalInput">Oyuncu Adınızı Giriniz!</label>
+                <input type="text" id="playerNameModalInput" placeholder="Player 1">
+                <button type="button" class="side-btn" id="playerNameUpdateModalButton">Oyuncu Adını Güncelle</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js" integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw==" crossorigin="anonymous"></script>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var gameID = `<%= gameID %>`
+        var sessID = `<%= sessID %>`
+        var thisPlayerUsername = `<%= sessUsername %>`
+    </script>
+    <script src="/js/ingame.js"></script>
+</body>
+
+</html>

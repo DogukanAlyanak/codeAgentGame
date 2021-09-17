@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <form id="usernameForm" action="">
+        <input id="usernameInput" autocomplete="off" value="SAMPLEWIXORICE" /><button>Oda Oluştur</button>
+        <input id="gameInput" value="<%= newGameCode %> " type="text" style="display: none;" hidden >
+        <input id="sessID" value="<%= sessID %> " type="text" style="display: none;" hidden >
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/createroom.js"></script>
+</body>
+</html>

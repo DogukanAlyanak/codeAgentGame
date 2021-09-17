@@ -1,0 +1,11 @@
+games = [ 
+    newGameCode = {
+        GAME_CODE : newGameCode,
+        STATUS: "active",
+        ADMIN:  sessID,
+        PLAYERS : [
+            sessID
+        ],
+        CARD :  [ ... ]
+    }
+]

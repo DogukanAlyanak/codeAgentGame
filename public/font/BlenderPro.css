@@ -1,0 +1,128 @@
+
+/* BlenderPro Font CSS */
+
+/* Thin */
+@font-face {
+  font-family: "BlenderPro";
+  font-style: normal;
+  font-weight: 100;
+  src: url("BlenderPro/BlenderProThin.eot"); /* IE9 Compat Modes */
+  src: url("BlenderPro/BlenderProThin.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("BlenderPro/BlenderProThin.otf") format("opentype"), /* Open Type Font */
+    url("BlenderPro/BlenderProThin.svg") format("svg"), /* Legacy iOS */
+    url("BlenderPro/BlenderProThin.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("BlenderPro/BlenderProThin.woff") format("woff"), /* Modern Browsers */
+    url("BlenderPro/BlenderProThin.woff2") format("woff2"); /* Modern Browsers */
+}
+
+/* Thin Italic */
+@font-face {
+  font-family: "BlenderPro";
+  font-style: italic;
+  font-weight: 100;
+  src: url("BlenderPro/BlenderProThinItalic.eot");
+  src: url("BlenderPro/BlenderProThinItalic.eot?#iefix") format("embedded-opentype"),
+    url("BlenderPro/BlenderProThinItalic.otf") format("opentype"),
+    url("BlenderPro/BlenderProThinItalic.svg") format("svg"),
+    url("BlenderPro/BlenderProThinItalic.ttf") format("truetype"),
+    url("BlenderPro/BlenderProThinItalic.woff") format("woff"),
+    url("BlenderPro/BlenderProThinItalic.woff2") format("woff2");
+}
+
+/* Book */
+@font-face {
+  font-family: "BlenderPro";
+  font-style: normal;
+  font-weight: 300;
+  src: url("BlenderPro/BlenderProBook.eot");
+  src: url("BlenderPro/BlenderProBook.eot?#iefix") format("embedded-opentype"),
+    url("BlenderPro/BlenderProBook.otf") format("opentype"),
+    url("BlenderPro/BlenderProBook.svg") format("svg"),
+    url("BlenderPro/BlenderProBook.ttf") format("truetype"),
+    url("BlenderPro/BlenderProBook.woff") format("woff"),
+    url("BlenderPro/BlenderProBook.woff2") format("woff2");
+}
+
+/* Book Italic */
+@font-face {
+  font-family: "BlenderPro";
+  font-style: italic;
+  font-weight: 300;
+  src: url("BlenderPro/BlenderProBookItalic.eot");
+  src: url("BlenderPro/BlenderProBookItalic.eot?#iefix") format("embedded-opentype"),
+    url("BlenderPro/BlenderProBookItalic.otf") format("opentype"),
+    url("BlenderPro/BlenderProBookItalic.svg") format("svg"),
+    url("BlenderPro/BlenderProBookItalic.ttf") format("truetype"),
+    url("BlenderPro/BlenderProBookItalic.woff") format("woff"),
+    url("BlenderPro/BlenderProBookItalic.woff2") format("woff2");
+}
+
+/* Medium */
+@font-face {
+  font-family: "BlenderPro";
+  font-style: normal;
+  font-weight: 500;
+  src: url("BlenderPro/BlenderProMedium.eot");
+  src: url("BlenderPro/BlenderProMedium.eot?#iefix") format("embedded-opentype"),
+    url("BlenderPro/BlenderProMedium.otf") format("opentype"),
+    url("BlenderPro/BlenderProMedium.svg") format("svg"),
+    url("BlenderPro/BlenderProMedium.ttf") format("truetype"),
+    url("BlenderPro/BlenderProMedium.woff") format("woff"),
+    url("BlenderPro/BlenderProMedium.woff2") format("woff2");
+}
+
+/* Medium Italic */
+@font-face {
+  font-family: "BlenderPro";
+  font-style: italic;
+  font-weight: 500;
+  src: url("BlenderPro/BlenderProMediumItalic.eot");
+  src: url("BlenderPro/BlenderProMediumItalic.eot?#iefix") format("embedded-opentype"),
+    url("BlenderPro/BlenderProMediumItalic.otf") format("opentype"),
+    url("BlenderPro/BlenderProMediumItalic.svg") format("svg"),
+    url("BlenderPro/BlenderProMediumItalic.ttf") format("truetype"),
+    url("BlenderPro/BlenderProMediumItalic.woff") format("woff"),
+    url("BlenderPro/BlenderProMediumItalic.woff2") format("woff2");
+}
+
+/* Bold */
+@font-face {
+  font-family: "BlenderPro";
+  font-style: normal;
+  font-weight: 700;
+  src: url("BlenderPro/BlenderProBold.eot");
+  src: url("BlenderPro/BlenderProBold.eot?#iefix") format("embedded-opentype"),
+    url("BlenderPro/BlenderProBold.otf") format("opentype"),
+    url("BlenderPro/BlenderProBold.svg") format("svg"),
+    url("BlenderPro/BlenderProBold.ttf") format("truetype"),
+    url("BlenderPro/BlenderProBold.woff") format("woff"),
+    url("BlenderPro/BlenderProBold.woff2") format("woff2");
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: "BlenderPro";
+  font-style: italic;
+  font-weight: 700;
+  src: url("BlenderPro/BlenderProBoldItalic.eot");
+  src: url("BlenderPro/BlenderProBoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("BlenderPro/BlenderProBoldItalic.otf") format("opentype"),
+    url("BlenderPro/BlenderProBoldItalic.svg") format("svg"),
+    url("BlenderPro/BlenderProBoldItalic.ttf") format("truetype"),
+    url("BlenderPro/BlenderProBoldItalic.woff") format("woff"),
+    url("BlenderPro/BlenderProBoldItalic.woff2") format("woff2");
+}
+
+/* Heavy */
+@font-face {
+  font-family: "BlenderPro";
+  font-style: normal;
+  font-weight: 900;
+  src: url("BlenderPro/BlenderProHeavy.eot");
+  src: url("BlenderPro/BlenderProHeavy.eot?#iefix") format("embedded-opentype"),
+    url("BlenderPro/BlenderProHeavy.otf") format("opentype"),
+    url("BlenderPro/BlenderProHeavy.svg") format("svg"),
+    url("BlenderPro/BlenderProHeavy.ttf") format("truetype"),
+    url("BlenderPro/BlenderProHeavy.woff") format("woff"),
+    url("BlenderPro/BlenderProHeavy.woff2") format("woff2");
+}

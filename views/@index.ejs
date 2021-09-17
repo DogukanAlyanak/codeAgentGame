@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/bootstrap/5.0.0/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap/5.0.0/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/css/bootstrap/5.0.0/bootstrap-reboot.min.css">
+</head>
+
+<body>
+    <h1>
+    </h1>
+
+    <ul id="messages"></ul>
+    <form id="sessionIDForm" action="">
+        <input id="sessionIDInput" autocomplete="off" /><button>USERID</button>
+    </form>
+
+    <form id="form" action="">
+        <input id="input" autocomplete="off" /><button>Send</button>
+    </form>
+
+    <input type="text" hidden id="sessID" value="<%= sessID %>">
+    <input type="text" hidden id="sessUsername" value="<%= sessUsername %>">
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+
+    </script>
+    <script src="/js/bootstrap/5.0.0/bootstrap.min.js"></script>
+    <script src="/js/bootstrap/5.0.0/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
